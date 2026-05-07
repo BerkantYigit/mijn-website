@@ -3,27 +3,24 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <!-- resetten van browsers -->
   <link rel="stylesheet" href="./css/reset.css">
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- JavaScript: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
-    </script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
+  </script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
 <!-- HEADER -->
-<header class="bg-light p-3">
+<header class="p-3">
     <div class="container d-flex justify-content-between align-items-center">
-        <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio">
+        <a href="index.html">
+            <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio">
+        </a>
         <nav>
             <a href="index.html" class="mx-2">Home</a>
             <a href="portfolio.html" class="mx-2">Portfolio</a>
@@ -32,68 +29,90 @@
     </div>
 </header>
 
-<!-- MAIN -->
-<main class="container my-4">
-    <div class="row">
+<div class="container my-4">
+    <div class="row g-4">
 
-        <!-- ASIDE -->
-        <aside class="col-md-3 bg-light p-3">
-            Aside
-        </aside>
+        <!-- MAIN -->
+        <main class="col-md-9">
 
-        <!-- CONTENT -->
-        <section class="col-md-9">
-
-            <h1>Welkom op mijn portfolio</h1>
-            <p>Korte intro tekst over portfolio</p>
+            <!-- WELKOM -->
+            <div class="hero">
+                <h1>Welkom op mijn portfolio</h1>
+                <p>Hallo! Ik ben Berkant Yigit, student Systeem- en Netwerkbeheer aan AP Hogeschool. 
+                Op deze website vind je een overzicht van mijn projecten, vaardigheden en ervaringen die ik heb opgedaan tijdens mijn opleiding. 
+                Kijk gerust rond en ontdek wat ik allemaal gemaakt heb!</p>
+            </div>
 
             <!-- OVER MIJ -->
-            <div class="row my-4">
-                <div class="col-md-6">
-                    <img src="" class="img-fluid" alt="">
-                </div>
-                <div class="col-md-6">
-                    <p>Korte tekst over mij</p>
-                </div>
-            </div>
+            <section class="over-mij">
+                <h2>Over mij</h2>
+                <p>Ik ben Berkant Yigit, een gepassioneerde student Systeem- en Netwerkbeheer aan AP Hogeschool. 
+                Wat mij het meest aanspreekt in mijn opleiding is het beveiligen van online systemen, ik vind het fascinerend hoe je digitale omgevingen kan beschermen tegen bedreigingen. Na mijn opleiding wil ik graag aan de slag in de IT-sector, waar ik mijn kennis en vaardigheden verder kan ontwikkelen. 
+                Buiten school hou ik van gamen en sporten om mijn hoofd leeg te maken.</p>
+            </section>
 
             <!-- PROJECTEN -->
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="" class="card-img-top">
-                        <div class="card-body">
-                            <h5>Titel</h5>
+            <section class="projecten">
+                <h2>Projecten</h2>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h3>Titel</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="" class="card-img-top">
-                        <div class="card-body">
-                            <h5>Titel</h5>
+                    <!-- PROJECT 2: GalaxyFarFarAway -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./assets/images/galaxy.png" class="card-img-top" alt="Linux mappenstructuur GalaxyFarFarAway">
+                            <div class="card-body d-flex flex-column">
+                                <h3>GalaxyFarFarAway</h3>
+                                <p class="text-muted small">Linux oefening waarbij een volledige mappenstructuur werd aangemaakt via de terminal.</p>
+                                <a href="project-2.html" class="btn btn-verstuur mt-auto">Lees meer <i class="bi bi-arrow-right ms-1"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="" class="card-img-top">
-                        <div class="card-body">
-                            <h5>Titel</h5>
+                    <!-- PROJECT 3: Presenteren -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="./assets/images/networkmapperlite.jpg" class="card-img-top" alt="Network Mapper Lite app">
+                            <div class="card-body d-flex flex-column">
+                                <h3>Network Mapper Lite</h3>
+                                <p class="text-muted small">Een app die je netwerk scant en alle verbonden apparaten overzichtelijk weergeeft.</p>
+                                <a href="project-3.html" class="btn btn-verstuur mt-auto">Lees meer <i class="bi bi-arrow-right ms-1"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+        </main>
+
+        <!-- ASIDE -->
+        <aside class="col-md-3">
+            <div class="d-flex flex-column align-items-center text-center w-100">
+                <img 
+                    src="./assets/images/foto.jpg" 
+                    class="rounded-circle border border-3 shadow mb-3"
+                    style="width: 160px; height: 160px; object-fit: cover;"
+                    alt="Foto van Berkant Yigit"
+                >
+                <h2 class="fs-5 fw-bold mb-1">Berkant Yigit</h2>
+                <span class="opleiding">Student Systeem- en Netwerkbeheer</span>
+                <p class="text-muted small mt-2">AP Hogeschool</p>
             </div>
+        </aside>
 
-        </section>
     </div>
-</main>
+</div>
 
 <!-- FOOTER -->
-<footer class="bg-light text-center p-3">
-    Footer
+<footer class="text-center p-3">
+    <p class="mb-0">&copy; 2026 Berkant Yigit</p>
 </footer>
 
 </body>

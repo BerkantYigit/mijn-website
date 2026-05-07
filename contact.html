@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <!-- resetten van browsers -->
+  <title>Contact</title>
+  <!-- Resetten van browsers -->
   <link rel="stylesheet" href="./css/reset.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <!-- Bootstrap CSS icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- JavaScript: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
-    </script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
+  </script>
+  <!-- LEAFLET -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="css/map.css">
+  <!-- Leaflet JS eerst, dan map.js -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="./js/map.js" defer></script>
+  <!-- eigen geschreven css -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-<header class="bg-light p-3">
+<!-- HEADER -->
+<header class="p-3">
     <div class="container d-flex justify-content-between align-items-center">
-        <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio">
+        <a href="index.html">
+            <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio">
+        </a>
         <nav>
             <a href="index.html" class="mx-2">Home</a>
             <a href="portfolio.html" class="mx-2">Portfolio</a>
@@ -32,61 +43,95 @@
     </div>
 </header>
 
-<main class="container my-4">
+<!-- WRAPPER voor main + aside naast elkaar -->
+<div class="container my-4">
+    <div class="row g-4">
 
-    <div class="row">
+        <!-- MAIN -->
+        <main class="col-md-9">
 
-        <!-- CONTACT INFO -->
-        <aside class="col-md-4 bg-light p-3">
-            <h4>Contact</h4>
-            <p><strong>Email:</strong> xxx</p>
-            <p><strong>Telefoon:</strong> xxx</p>
+            <div class="hero">
+                <h1>Contact</h1>
+                <p>Heb je een vraag of wil je samenwerken? Vul het formulier in en ik neem zo snel mogelijk contact met je op.</p>
+            </div>
+
+            <!-- FORMULIER -->
+            <section class="over-mij">
+                <h2>Stuur een bericht</h2>
+
+                <form>
+
+                    <div class="mb-3">
+                        <label for="titel" class="form-label">Titel</label>
+                        <input type="text" id="titel" class="form-control">
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="voornaam" class="form-label">Voornaam <span class="text-danger">*</span></label>
+                            <input type="text" id="voornaam" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="tweede-naam" class="form-label">Tweede naam</label>
+                            <input type="text" id="tweede-naam" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="achternaam" class="form-label">Achternaam <span class="text-danger">*</span></label>
+                        <input type="text" id="achternaam" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="bericht" class="form-label">Bericht</label>
+                        <textarea id="bericht" class="form-control" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-verstuur">
+                        Verstuur <i class="bi bi-send ms-1"></i>
+                    </button>
+
+                </form>
+            </section>
+
+        </main>
+
+        <!-- ASIDE -->
+        <aside class="col-md-3">
+            <div class="d-flex flex-column align-items-center text-center w-100 mb-4">
+                <img 
+                    src="./assets/images/foto.jpg" 
+                    class="rounded-circle border border-3 shadow mb-3"
+                    style="width: 160px; height: 160px; object-fit: cover;"
+                    alt="Foto van Berkant Yigit"
+                >
+                <h2 class="fs-5 fw-bold mb-1">Berkant Yigit</h2>
+                <span class="opleiding">Student Systeem- en Netwerkbeheer</span>
+                <p class="text-muted small mt-2">AP Hogeschool</p>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="contact-info">
+                <h2 class="fs-6 fw-bold mb-3">Contactgegevens</h2>
+                <p><i class="bi bi-envelope me-2"></i><strong>Email:</strong> 31nul7@gmail.com</p>
+                <p class="mt-2"><i class="bi bi-telephone me-2"></i><strong>Telefoon:</strong> +32 489 99 38 94</p>
+            </div>
         </aside>
 
-        <!-- FORMULIER -->
-        <section class="col-md-8">
-            <h1>Formulier</h1>
-
-            <form>
-
-                <div class="mb-3">
-                    <label class="form-label">Titel</label>
-                    <input type="text" class="form-control">
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Voornaam</label>
-                    <input type="text" class="form-control" required>
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Tweede naam</label>
-                    <input type="text" class="form-control">
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Achternaam</label>
-                    <input type="text" class="form-control" required>
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Bericht</label>
-                    <textarea class="form-control" rows="5"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">
-                    Verstuur
-                </button>
-
-            </form>
-        </section>
-
     </div>
+</div>
 
-</main>
+<div class="container mb-4">
+    <section class="over-mij">
+        <h2>Locatie</h2>
+        <p class="mb-3">Ik ben gevestigd in de omgeving van Berchem, Antwerpen.</p>
+        <div id="map" style="height: 350px; border-radius: 10px;"></div>
+    </section>
+</div>
 
-<footer class="bg-light text-center p-3">
-    Footer
+<!-- FOOTER -->
+<footer class="text-center p-3">
+    <p class="mb-0">&copy; 2026 Berkant Yigit</p>
 </footer>
 
 </body>

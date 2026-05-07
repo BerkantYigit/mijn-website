@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GalaxyFarFarAway — Project</title>
+  <!-- resetten van browsers -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+  </script>
+  <!-- eigen geschreven css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html">
+            <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio">
+        </a>
+        <nav>
+            <a href="index.html" class="mx-2">Home</a>
+            <a href="portfolio.html" class="mx-2">Portfolio</a>
+            <a href="contact.html" class="mx-2">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container my-4">
+    <div class="row g-4">
+
+        <!-- MAIN -->
+        <main class="col-md-9">
+
+            <!-- HERO -->
+            <div class="hero">
+                <h1>GalaxyFarFarAway</h1>
+                <p>Linux oefening</p>
+            </div>
+
+            <!-- PROJECT DETAIL -->
+            <article class="over-mij">
+
+                <h2>Over dit project</h2>
+                <p>Voor dit project kregen we de opdracht om via de Linux terminal een volledige mappenstructuur aan te maken gebaseerd op het Star Wars universum. Het project heet <strong>GalaxyFarFarAway</strong> en bevat planeten, personages en voertuigen als mappen en submappen.</p>
+
+                <h2 class="mt-4">Wat heb ik geleerd?</h2>
+                <p>Tijdens deze oefening leerde ik werken met de Linux terminal en de volgende commando's:</p>
+                <ul class="mt-2">
+                    <li><code>mkdir</code> — mappen aanmaken</li>
+                    <li><code>cd</code> — navigeren tussen mappen</li>
+                    <li><code>ls</code> — inhoud van een map tonen</li>
+                    <li><code>tree</code> — de mappenstructuur visueel weergeven</li>
+                    <li><code>touch</code> — bestanden aanmaken</li>
+                </ul>
+
+                <h2 class="mt-4">Mappenstructuur</h2>
+                <p>Hieronder zie je de volledige mappenstructuur die ik heb aangemaakt:</p>
+                <img src="./assets/images/galaxy.png" class="img-fluid rounded mt-3" alt="Linux mappenstructuur GalaxyFarFarAway">
+
+            </article>
+
+            <!-- TERUG KNOP -->
+            <a href="portfolio.html" class="btn btn-verstuur mt-4">
+                <i class="bi bi-arrow-left me-1"></i> Terug naar portfolio
+            </a>
+
+        </main>
+
+        <!-- ASIDE -->
+        <aside class="col-md-3">
+            <div class="d-flex flex-column align-items-center text-center w-100">
+                <img 
+                    src="./assets/images/foto.jpg" 
+                    class="rounded-circle border border-3 shadow mb-3"
+                    style="width: 160px; height: 160px; object-fit: cover;"
+                    alt="Foto van Berkant Yigit"
+                >
+                <h2 class="fs-5 fw-bold mb-1">Berkant Yigit</h2>
+                <span class="opleiding">Student Systeem- en Netwerkbeheer</span>
+                <p class="text-muted small mt-2">AP Hogeschool</p>
+            </div>
+
+            <!-- PROJECT INFO -->
+            <div class="contact-info mt-4">
+                <h2 class="fs-6 fw-bold mb-3">Projectinfo</h2>
+                <p><i class="bi bi-calendar me-2"></i><strong>Jaar:</strong> 2026</p>
+                <p class="mt-2"><i class="bi bi-book me-2"></i><strong>Vak:</strong> Besturingssystemen</p>
+                <p class="mt-2"><i class="bi bi-building me-2"></i><strong>School:</strong> AP Hogeschool</p>
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center p-3">
+    <p class="mb-0">&copy; 2026 Berkant Yigit</p>
+</footer>
+
+</body>
+</html>

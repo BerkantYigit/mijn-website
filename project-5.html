@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soldeeróefening — Project</title>
+  <!-- resetten van browsers -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+  </script>
+  <!-- eigen geschreven css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html">
+            <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio">
+        </a>
+        <nav>
+            <a href="index.html" class="mx-2">Home</a>
+            <a href="portfolio.html" class="mx-2">Portfolio</a>
+            <a href="contact.html" class="mx-2">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container my-4">
+    <div class="row g-4">
+
+        <!-- MAIN -->
+        <main class="col-md-9">
+
+            <!-- HERO -->
+            <div class="hero">
+                <h1>Soldeeróefening IoT</h1>
+                <p>Hardware oefening</p>
+            </div>
+
+            <!-- PROJECT DETAIL -->
+            <article class="over-mij">
+
+                <h2>Over dit project</h2>
+                <p>Tijdens mijn eerste semester van de bachelor Elektronica-ICT aan AP Hogeschool kregen we een praktische soldeeroefening. We kregen een ronde printplaat waarop we met de hand alle componenten moesten solderen. Het eindresultaat was een schijf met rode LED-lampjes die allemaal tegelijk oplichten.</p>
+
+                <h2 class="mt-4">Wat heb ik geleerd?</h2>
+                <p>Deze opdracht leerde mij werken met echte elektronica en hardware. Ik deed kennis op over:</p>
+                <ul class="mt-2">
+                    <li>Het correct solderen van elektronische componenten op een printplaat</li>
+                    <li>Het werken met LED's, weerstanden en een microcontroller</li>
+                    <li>Het belang van nauwkeurigheid bij het plaatsen van componenten</li>
+                    <li>Basisprincipes van IoT, Internet of Things</li>
+                    <li>Het testen en debuggen van een elektronisch circuit</li>
+                </ul>
+
+                <h2 class="mt-4">Resultaat</h2>
+                <p>Na het solderen van alle componenten brandden alle rode LED-lampjes correct. Dit was een mooie eerste kennismaking met de hardware kant van de ICT-wereld en een waardevolle ervaring die mij veel bijgebracht heeft.</p>
+
+               <img src="./assets/images/solderen.jpg" class="img-fluid rounded mt-3" style="max-width: 500px; width: 100%;" alt="Soldeeróefening IoT met rode LED-lampjes van AP Hogeschool">
+
+            </article>
+
+            <!-- TERUG KNOP -->
+            <a href="portfolio.html" class="btn btn-verstuur mt-4">
+                <i class="bi bi-arrow-left me-1"></i> Terug naar portfolio
+            </a>
+
+        </main>
+
+        <!-- ASIDE -->
+        <aside class="col-md-3">
+            <div class="d-flex flex-column align-items-center text-center w-100">
+                <img 
+                    src="./assets/images/foto.jpg" 
+                    class="rounded-circle border border-3 shadow mb-3"
+                    style="width: 160px; height: 160px; object-fit: cover;"
+                    alt="Foto van Berkant Yigit"
+                >
+                <h2 class="fs-5 fw-bold mb-1">Berkant Yigit</h2>
+                <span class="opleiding">Student Systeem- en Netwerkbeheer</span>
+                <p class="text-muted small mt-2">AP Hogeschool</p>
+            </div>
+
+            <!-- PROJECT INFO -->
+            <div class="contact-info mt-4">
+                <h2 class="fs-6 fw-bold mb-3">Projectinfo</h2>
+                <p><i class="bi bi-calendar me-2"></i><strong>Jaar:</strong> 2025</p>
+                <p class="mt-2"><i class="bi bi-book me-2"></i><strong>Vak:</strong> Internet of Things</p>
+                <p class="mt-2"><i class="bi bi-mortarboard me-2"></i><strong>Opleiding:</strong> Bachelor Elektronica-ICT</p>
+                <p class="mt-2"><i class="bi bi-building me-2"></i><strong>School:</strong> AP Hogeschool</p>
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center p-3">
+    <p class="mb-0">&copy; 2026 Berkant Yigit</p>
+</footer>
+
+</body>
+</html>
