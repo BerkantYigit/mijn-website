@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website — Project</title>
+  <!-- resetten van browsers -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+  </script>
+  <!-- eigen geschreven css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html">
+            <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio">
+        </a>
+        <nav>
+            <a href="index.html" class="mx-2">Home</a>
+            <a href="portfolio.html" class="mx-2">Portfolio</a>
+            <a href="contact.html" class="mx-2">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container my-4">
+    <div class="row g-4">
+
+        <!-- MAIN -->
+        <main class="col-md-9">
+
+            <!-- HERO -->
+            <div class="hero">
+                <h1>Portfolio Website</h1>
+                <p>Webtechnologie intro</p>
+            </div>
+
+            <!-- PROJECT DETAIL -->
+            <article class="over-mij">
+
+                <h2>Over dit project</h2>
+                <p>Voor dit project heb ik van nul een volledige portfolio website gebouwd. De website bestaat uit meerdere pagina's en is volledig zelf ontworpen en geprogrammeerd. Het doel was om mijn projecten, vaardigheden en ervaringen overzichtelijk te presenteren.</p>
+
+                <h2 class="mt-4">Pagina's</h2>
+                <ul class="mt-2">
+                    <li><i class="bi bi-house me-2"></i><strong>Home</strong> — welkomstpagina met een korte introductie en overzicht van projecten</li>
+                    <li><i class="bi bi-grid me-2"></i><strong>Portfolio</strong> — overzicht van alle projecten met kaarten en een "Lees meer" knop</li>
+                    <li><i class="bi bi-envelope me-2"></i><strong>Contact</strong> — contactformulier met een Leaflet kaart van station Berchem</li>
+                    <li><i class="bi bi-file-text me-2"></i><strong>Projectpagina's</strong> — aparte detailpagina per project</li>
+                </ul>
+
+                <h2 class="mt-4">Gebruikte technologieën</h2>
+                <ul class="mt-2">
+                    <li><i class="bi bi-filetype-html me-2"></i><strong>HTML5</strong> — semantische opmaak met correcte heading hiërarchie</li>
+                    <li><i class="bi bi-filetype-css me-2"></i><strong>CSS3</strong> — eigen stijlen met CSS variabelen en animaties</li>
+                    <li><i class="bi bi-bootstrap me-2"></i><strong>Bootstrap 5</strong> — responsive layout met grid systeem</li>
+                    <li><i class="bi bi-filetype-js me-2"></i><strong>JavaScript</strong> — interactieve Leaflet kaart</li>
+                    <li><i class="bi bi-map me-2"></i><strong>Leaflet.js</strong> — interactieve kaart op de contactpagina</li>
+                </ul>
+
+                <h2 class="mt-4">Wat heb ik geleerd?</h2>
+                <p>Dit project leerde mij hoe je een volledige website bouwt van begin tot einde. Ik leerde werken met semantische HTML, responsive design via Bootstrap, eigen CSS schrijven met variabelen en een interactieve kaart integreren via Leaflet.js.</p>
+
+                <h2 class="mt-4">Screenshot</h2>
+                <img src="./assets/images/website.png" class="img-fluid rounded mt-3" alt="Screenshot van mijn portfolio website">
+
+            </article>
+
+            <!-- TERUG KNOP -->
+            <a href="portfolio.html" class="btn btn-verstuur mt-4">
+                <i class="bi bi-arrow-left me-1"></i> Terug naar portfolio
+            </a>
+
+        </main>
+
+        <!-- ASIDE -->
+        <aside class="col-md-3">
+            <div class="d-flex flex-column align-items-center text-center w-100">
+                <img 
+                    src="./assets/images/foto.jpg" 
+                    class="rounded-circle border border-3 shadow mb-3"
+                    style="width: 160px; height: 160px; object-fit: cover;"
+                    alt="Foto van Berkant Yigit"
+                >
+                <h2 class="fs-5 fw-bold mb-1">Berkant Yigit</h2>
+                <span class="opleiding">Student Systeem- en Netwerkbeheer</span>
+                <p class="text-muted small mt-2">AP Hogeschool</p>
+            </div>
+
+            <!-- PROJECT INFO -->
+            <div class="contact-info mt-4">
+                <h2 class="fs-6 fw-bold mb-3">Projectinfo</h2>
+                <p><i class="bi bi-calendar me-2"></i><strong>Jaar:</strong> 2026</p>
+                <p class="mt-2"><i class="bi bi-book me-2"></i><strong>Vak:</strong> Webtechnologie Intro</p>
+                <p class="mt-2"><i class="bi bi-building me-2"></i><strong>School:</strong> AP Hogeschool</p>
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center p-3">
+    <p class="mb-0">&copy; 2026 Berkant Yigit</p>
+</footer>
+
+</body>
+</html>
