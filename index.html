@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
+  <!-- Resetten van browsers -->
   <link rel="stylesheet" href="./css/reset.css">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  <!-- Bootstrap CSS icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
   </script>
+  <!-- eigen geschreven css -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -19,7 +26,7 @@
 <header class="p-3">
     <div class="container d-flex justify-content-between align-items-center">
         <a href="index.html">
-            <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio">
+            <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio, AI gegenereerde afbeelding">
         </a>
         <nav>
             <a href="index.html" class="mx-2">Home</a>
@@ -36,12 +43,12 @@
         <main class="col-md-9">
 
             <!-- WELKOM -->
-            <div class="hero">
+            <section class="hero">
                 <h1>Welkom op mijn portfolio</h1>
                 <p>Hallo! Ik ben Berkant Yigit, student Systeem- en Netwerkbeheer aan AP Hogeschool. 
                 Op deze website vind je een overzicht van mijn projecten, vaardigheden en ervaringen die ik heb opgedaan tijdens mijn opleiding. 
                 Kijk gerust rond en ontdek wat ik allemaal gemaakt heb!</p>
-            </div>
+            </section>
 
             <!-- OVER MIJ -->
             <section class="over-mij">
@@ -49,6 +56,70 @@
                 <p>Ik ben Berkant Yigit, een gepassioneerde student Systeem- en Netwerkbeheer aan AP Hogeschool. 
                 Wat mij het meest aanspreekt in mijn opleiding is het beveiligen van online systemen, ik vind het fascinerend hoe je digitale omgevingen kan beschermen tegen bedreigingen. Na mijn opleiding wil ik graag aan de slag in de IT-sector, waar ik mijn kennis en vaardigheden verder kan ontwikkelen. 
                 Buiten school hou ik van gamen en sporten om mijn hoofd leeg te maken.</p>
+            </section>
+
+            <!-- VAARDIGHEDEN -->
+            <section class="over-mij">
+                <h2>Vaardigheden</h2>
+                <div class="row g-3 mt-1">
+
+                    <div class="col-6 col-md-3">
+                        <div class="vaardigheid-card text-center p-3">
+                            <i class="bi bi-terminal fs-2 mb-2"></i>
+                            <p class="fw-bold mb-0">Linux</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="vaardigheid-card text-center p-3">
+                            <i class="bi bi-code-slash fs-2 mb-2"></i>
+                            <p class="fw-bold mb-0">C#</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="vaardigheid-card text-center p-3">
+                            <i class="bi bi-filetype-py fs-2 mb-2"></i>
+                            <p class="fw-bold mb-0">Python</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="vaardigheid-card text-center p-3">
+                            <i class="bi bi-filetype-html fs-2 mb-2"></i>
+                            <p class="fw-bold mb-0">HTML & CSS</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="vaardigheid-card text-center p-3">
+                            <i class="bi bi-bootstrap fs-2 mb-2"></i>
+                            <p class="fw-bold mb-0">Bootstrap</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="vaardigheid-card text-center p-3">
+                            <i class="bi bi-filetype-js fs-2 mb-2"></i>
+                            <p class="fw-bold mb-0">JavaScript</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="vaardigheid-card text-center p-3">
+                            <i class="bi bi-diagram-3 fs-2 mb-2"></i>
+                            <p class="fw-bold mb-0">Netwerken</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="vaardigheid-card text-center p-3">
+                            <i class="bi bi-cpu fs-2 mb-2"></i>
+                            <p class="fw-bold mb-0">Solderen / Hardware</p>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
             <!-- PROJECTEN -->
@@ -59,10 +130,11 @@
                     <!-- PROJECT 1: Rekenmachine -->
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="./assets/images/rekenmachine.png" class="card-img-top" alt="Rekenmachine in Visual Studio">
+                            <img src="./assets/images/rekenmachine-ai.jpg" class="card-img-top" alt="Rekenmachine in Visual Studio, AI gegenereerde afbeelding">
                             <div class="card-body d-flex flex-column">
                                 <h3>Rekenmachine</h3>
                                 <p class="text-muted small">C# console-applicatie met optellen, aftrekken, vermenigvuldigen en delen.</p>
+                                <p class="text-muted small mt-1"><em>* Afbeelding gegenereerd met AI</em></p>
                                 <a href="project-1.html" class="btn btn-verstuur mt-auto">Lees meer <i class="bi bi-arrow-right ms-1"></i></a>
                             </div>
                         </div>
@@ -71,22 +143,24 @@
                     <!-- PROJECT 2: GalaxyFarFarAway -->
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="./assets/images/galaxy.png" class="card-img-top" alt="Linux mappenstructuur GalaxyFarFarAway">
+                            <img src="./assets/images/galaxy-ai.jpg" class="card-img-top" alt="Linux mappenstructuur GalaxyFarFarAway, AI gegenereerde afbeelding">
                             <div class="card-body d-flex flex-column">
                                 <h3>GalaxyFarFarAway</h3>
                                 <p class="text-muted small">Linux oefening waarbij een volledige mappenstructuur werd aangemaakt via de terminal.</p>
+                                <p class="text-muted small mt-1"><em>* Afbeelding gegenereerd met AI</em></p>
                                 <a href="project-2.html" class="btn btn-verstuur mt-auto">Lees meer <i class="bi bi-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- PROJECT 3: Presenteren -->
+                    <!-- PROJECT 3: Network Mapper Lite -->
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="./assets/images/networkmapperlite.jpg" class="card-img-top" alt="Network Mapper Lite app">
+                            <img src="./assets/images/networkmapperlite.jpg" class="card-img-top" alt="Network Mapper Lite app, AI gegenereerde afbeelding">
                             <div class="card-body d-flex flex-column">
                                 <h3>Network Mapper Lite</h3>
                                 <p class="text-muted small">Een app die je netwerk scant en alle verbonden apparaten overzichtelijk weergeeft.</p>
+                                <p class="text-muted small mt-1"><em>* Afbeelding gegenereerd met AI</em></p>
                                 <a href="project-3.html" class="btn btn-verstuur mt-auto">Lees meer <i class="bi bi-arrow-right ms-1"></i></a>
                             </div>
                         </div>

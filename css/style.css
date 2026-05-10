@@ -13,9 +13,9 @@ body {
 }
 
 .logo {
-    width: 80px;
-    height: auto;
-    border-radius: 15px;
+  width: 80px;
+  height: auto;
+  border-radius: 15px;
 }
 
 header {
@@ -75,6 +75,22 @@ header nav a:hover {
   color: #555;
 }
 
+.vaardigheid-card {
+  background-color: var(--kleur-lichtblauw);
+  border-radius: 12px;
+  color: var(--kleur-accent);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vaardigheid-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vaardigheid-card i {
+  display: block;
+}
+
 .projecten h2 {
   color: var(--kleur-accent);
   font-weight: 700;
@@ -103,8 +119,8 @@ header nav a:hover {
 }
 
 .card-img-top {
-    height: 200px;
-    object-fit: cover;
+  height: 200px;
+  object-fit: cover;
 }
 
 aside {

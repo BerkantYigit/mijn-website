@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
   <!-- Resetten van browsers -->
   <link rel="stylesheet" href="./css/reset.css">
   <!-- Bootstrap CSS -->
@@ -33,7 +34,7 @@
 <header class="p-3">
     <div class="container d-flex justify-content-between align-items-center">
         <a href="index.html">
-            <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio">
+            <img src="./assets/images/logo.png" class="logo" alt="Logo van mijn portfolio, AI gegenereerde afbeelding">
         </a>
         <nav>
             <a href="index.html" class="mx-2">Home</a>
@@ -50,10 +51,11 @@
         <!-- MAIN -->
         <main class="col-md-9">
 
-            <div class="hero">
+            <!-- HERO -->
+            <section class="hero">
                 <h1>Contact</h1>
                 <p>Heb je een vraag of wil je samenwerken? Vul het formulier in en ik neem zo snel mogelijk contact met je op.</p>
-            </div>
+            </section>
 
             <!-- FORMULIER -->
             <section class="over-mij">
@@ -94,6 +96,13 @@
                 </form>
             </section>
 
+            <!-- KAART -->
+            <section class="over-mij mt-4">
+                <h2>Locatie</h2>
+                <p class="mb-3">Ik ben gevestigd in de omgeving van Berchem, Antwerpen.</p>
+                <div id="map" style="height: 350px; border-radius: 10px;"></div>
+            </section>
+
         </main>
 
         <!-- ASIDE -->
@@ -119,14 +128,6 @@
         </aside>
 
     </div>
-</div>
-
-<div class="container mb-4">
-    <section class="over-mij">
-        <h2>Locatie</h2>
-        <p class="mb-3">Ik ben gevestigd in de omgeving van Berchem, Antwerpen.</p>
-        <div id="map" style="height: 350px; border-radius: 10px;"></div>
-    </section>
 </div>
 
 <!-- FOOTER -->
